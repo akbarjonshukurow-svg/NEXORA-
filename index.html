@@ -1,104 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="tg">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXORA - Explore Beyond Limits</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXORA | Digital World</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:Arial,sans-serif;
-background:#080d19;color:white;
-min-height:100vh;
-}
-header{
-padding:22px 7%;
-display:flex;justify-content:space-between;
-align-items:center;border-bottom:1px solid #202b40;
-}
-.logo{font-size:27px;font-weight:900;color:#58c8ff;letter-spacing:3px}
-nav a{color:#dce9fa;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{
-min-height:590px;padding:100px 8%;
-display:flex;flex-direction:column;justify-content:center;
-background:radial-gradient(ellipse at 80% 40%,#123b65 0%,#101d37 30%,#080d19 72%);
-}
-.tag{color:#5bcaff;letter-spacing:3px;font-size:12px}
-h1{font-size:clamp(48px,9vw,85px);margin:25px 0;line-height:1.05}
-h1 span{color:#54c8ff}
-.hero p{color:#aabbd2;max-width:510px;line-height:1.8}
-.btn{
-display:inline-block;margin-top:30px;padding:15px 27px;
-background:#168bd5;color:white;text-decoration:none;
-border-radius:9px;font-weight:bold;width:max-content;
-}
-section{padding:65px 8%}
-h2{font-size:30px;margin-bottom:12px}
-.sub{color:#91a4bd;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{
-background:#111d30;border:1px solid #263750;
-padding:27px;border-radius:16px;
-transition:.3s;
-}
-.card:hover{transform:translateY(-6px);border-color:#50c5ff}
-.card .emoji{font-size:32px;margin-bottom:20px}
-.card h3{margin-bottom:12px}
-.card p{color:#9eafc5;line-height:1.7;font-size:14px}
-footer{text-align:center;padding:30px;color:#8294aa;border-top:1px solid #202b40}
+*{box-sizing:border-box}
+body{margin:0;background:#080d19;color:#fff;font-family:Arial,sans-serif}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #26344b;position:sticky;top:0;background:#080d19;z-index:5}
+.logo{font-size:27px;font-weight:900;color:#51c7ff;letter-spacing:3px}
+header a{color:#b9cbe0;text-decoration:none}
+.hero{padding:85px 8%;background:radial-gradient(ellipse at 80% 30%,#174b78,#101b34 45%,#080d19)}
+.hero small{color:#54caff;letter-spacing:3px}
+h1{font-size:clamp(43px,8vw,76px);margin:25px 0}
+h1 span{color:#54caff}
+p{line-height:1.7;color:#aabbd1}
+button{cursor:pointer;border:0;border-radius:9px;padding:13px 20px;background:#168bd5;color:white;font-weight:bold;font-size:15px}
+button:hover{background:#35aef5}
+section{padding:55px 8%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:17px;margin-top:25px}
+.card{background:#111e32;border:1px solid #283a54;border-radius:16px;padding:24px;cursor:pointer;transition:.2s}
+.card:hover{transform:translateY(-5px);border-color:#50caff}
+.emoji{font-size:35px}
+.card h3{margin:15px 0 8px}
+.card p{font-size:14px}
+.panel{background:#111e32;border:1px solid #30435f;border-radius:16px;padding:25px;margin-top:25px;display:none}
+.panel h2{color:#56caff}
+.item{padding:15px 0;border-bottom:1px solid #293951}
+.item:last-child{border:0}
+input{padding:13px;border-radius:8px;border:1px solid #526781;background:#0b1424;color:white;font-size:16px;width:100%;margin:8px 0}
+.result{font-size:25px;color:#58ceff;margin:15px 0}
+footer{text-align:center;padding:30px;color:#8497b0;border-top:1px solid #25334a}
 </style>
 </head>
 <body>
 <header>
 <div class="logo">NEXORA</div>
-<nav>
-<a href="#home">Асосӣ</a>
-<a href="#discover">Кашф</a>
-<a href="#about">Дар бораи мо</a>
-</nav>
+<a href="#discover">Кашф кардан ↓</a>
 </header>
 
-<main>
-<div class="hero" id="home">
-<div class="tag">WELCOME TO A NEW DIGITAL WORLD</div>
+<div class="hero">
+<small>WELCOME TO NEXORA</small>
 <h1>Explore<br><span>Beyond Limits.</span></h1>
-<p>Ба ҷаҳони нави имкониятҳо ворид шав. Маълумоти ҷолиб, технологияҳои нав ва воситаҳои муфид дар як ҷо.</p>
-<a class="btn" href="#discover">Оғози кашф →</a>
+<p>Ҷаҳони дониш, технология ва имкониятҳои нав дар як ҷо.</p>
+<button onclick="document.getElementById('discover').scrollIntoView({behavior:'smooth'})">Оғози кашф →</button>
 </div>
 
 <section id="discover">
 <h2>Ҷаҳони NEXORA</h2>
-<p class="sub">Ҳар рӯз чизи навро кашф кун.</p>
+<p>Ягон бахшро интихоб кун ва маълумоти навро кашф намо.</p>
 <div class="grid">
-<div class="card">
-<div class="emoji">🌍</div>
-<h3>Ҷаҳони аҷиб</h3>
-<p>Кашфиётҳо ва маълумоти ҷолиб аз тамоми ҷаҳон.</p>
+<div class="card" onclick="showCategory('world')">
+<div class="emoji">🌍</div><h3>Ҷаҳони аҷиб</h3>
+<p>Маълумоти ҷолиб дар бораи ҷаҳон.</p>
 </div>
-<div class="card">
-<div class="emoji">🚀</div>
-<h3>Технология</h3>
-<p>Бо навгониҳои технология ва ояндаи рақамӣ шинос шав.</p>
+<div class="card" onclick="showCategory('knowledge')">
+<div class="emoji">🧠</div><h3>Дониш</h3>
+<p>Саволҳо ва ҷавобҳои шавқовар.</p>
 </div>
-<div class="card">
-<div class="emoji">🧠</div>
-<h3>Дониш</h3>
-<p>Ақлу дониши худро бо маълумоти нав инкишоф деҳ.</p>
+<div class="card" onclick="showCategory('tech')">
+<div class="emoji">🚀</div><h3>Технология</h3>
+<p>Кашфиёт ва технологияҳои нав.</p>
 </div>
-<div class="card">
-<div class="emoji">🛠️</div>
-<h3>Воситаҳои онлайн</h3>
-<p>Воситаҳои муфид барои корҳои ҳаррӯза.</p>
+<div class="card" onclick="showCategory('tools')">
+<div class="emoji">🛠️</div><h3>Воситаҳои онлайн</h3>
+<p>Асбобҳои муфид ва ҳисобкунак.</p>
 </div>
+</div>
+
+<div class="panel" id="panel">
+<h2 id="panelTitle"></h2>
+<div id="panelContent"></div>
+<button onclick="showCategory(currentCategory)">🔄 Маълумоти дигар</button>
 </div>
 </section>
 
-<section id="about">
-<h2>Дар бораи NEXORA</h2>
-<p class="sub">NEXORA — фазои рақамӣ барои кашф, дониш ва имкониятҳои нав.</p>
+<section>
+<h2>🔍 Ҷустуҷӯ</h2>
+<p>Дар дохили маълумоти NEXORA ҷустуҷӯ кун.</p>
+<input id="search" placeholder="Масалан: кайҳон, компютер..." oninput="searchContent()">
+<div id="searchResults"></div>
 </section>
-</main>
 
-<footer>© 2026 NEXORA. All rights reserved.</footer>
+<footer>
+<div class="logo">NEXORA</div>
+<p>Explore Beyond Limits.</p>
+© 2026 NEXORA. All rights reserved.
+</footer>
+
+<script>
+const data={
+world:[
+["Кайҳон","Дар кайҳон садҳо миллиард галактика мавҷуд аст."],
+["Уқёнус","Қисми зиёди уқёнусҳои Замин ҳанӯз пурра омӯхта нашудаанд."],
+["Моҳ","Моҳ ягона радифи табиии Замин мебошад."],
+["Замин","Замин тақрибан 4,5 миллиард сол пеш ба вуҷуд омадааст."],
+["Офтоб","Нури Офтоб тақрибан 8 дақиқаю 20 сония то Замин мерасад."]
+],
+knowledge:[
+["Илм","Илм ба мо кӯмак мекунад, ки ҷаҳонро беҳтар фаҳмем."],
+["Математика","Математика забони рақамҳо ва қонунҳои табиат аст."],
+["Компютер","Компютер маълумотро қабул, коркард ва нигоҳ медорад."],
+["Забон","Омӯхтани забонҳои нав имкониятҳои муоширатро зиёд мекунад."],
+["Хотира","Такрор ва машқ ба беҳтар шудани дар хотир нигоҳ доштан кӯмак мекунанд."]
+],
+tech:[
+["Зеҳни сунъӣ","Зеҳни сунъӣ метавонад матн, тасвир ва маълумотро коркард кунад."],
+["Роботҳо","Роботҳо метавонанд вазифаҳои гуногунро иҷро кунанд."],
+["Интернет","Интернет шабакаи ҷаҳонии пайвастшудаи компютерҳо мебошад."],
+["Барномасозӣ","Бо забонҳои барномасозӣ мо ба компютер дастур медиҳем."],
+["Кайҳоннавардӣ","Технология ба инсон имкон медиҳад, ки кайҳонро омӯзад."]
+]
+};
+let currentCategory="world";
+let indexes={world:0,knowledge:0,tech:0};
+
+function showCategory(type){
+currentCategory=type;
+let panel=document.getElementById("panel");
+panel.style.display="block";
+let title=document.getElementById("panelTitle");
+let content=document.getElementById("panelContent");
+if(type==="tools"){
+title.textContent="🛠️ Ҳисобкунаки NEXORA";
+content.innerHTML=`
+<p>Ду рақамро ворид кун:</p>
+<input id="num1" type="number" placeholder="Рақами якум">
+<input id="num2" type="number" placeholder="Рақами дуюм">
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">−</button>
+<button onclick="calculate('*')">×</button>
+<button onclick="calculate('/')">÷</button>
+</div><div class="result" id="answer">Натиҷа</div>`;
+}else{
+let names={world:"🌍 Ҷаҳони аҷиб",knowledge:"🧠 Дониш",tech:"🚀 Технология"};
+title.textContent=names[type];
+let arr=data[type];
+let index=indexes[type]%arr.length;
+content.innerHTML="<div class='item'><h3>"+arr[index][0]+"</h3><p>"+arr[index][1]+"</p></div>";
+indexes[type]++;
+}
+panel.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+function calculate(op){
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+if(document.getElementById("num1").value===""||document.getElementById("num2").value===""){
+document.getElementById("answer").textContent="Ҳар ду рақамро ворид кун";return;
+}
+let r=op==="+"?a+b:op==="-"?a-b:op==="*"?a*b:b===0?"Ба сифр тақсим кардан мумкин нест":a/b;
+document.getElementById("answer").textContent="Натиҷа: "+r;
+}
+
+function searchContent(){
+let q=document.getElementById("search").value.toLowerCase().trim();
+let result=document.getElementById("searchResults");
+if(!q){result.innerHTML="";return;}
+let all=[...data.world,...data.knowledge,...data.tech];
+let found=all.filter(x=>(x[0]+" "+x[1]).toLowerCase().includes(q));
+result.innerHTML=found.length?found.map(x=>"<div class='item'><b>"+x[0]+"</b><p>"+x[1]+"</p></div>").join(""):"<p>Маълумот ёфт нашуд.</p>";
+}
+</script>
 </body>
 </html>
